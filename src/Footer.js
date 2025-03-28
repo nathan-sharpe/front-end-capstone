@@ -3,9 +3,9 @@ import logo from './little-lemon-logo.svg'
 function Footer() {
     return (
         <footer className="footerGrid">
-            <img src={logo} alt="Logo for the Little Lemon Restaurant"></img>
+            <img src={logo} alt="Logo for the Little Lemon Restaurant" className='footerImage'></img>
             <section className="footerColumn">
-                <h3>Doormat Navigation</h3>
+                <h3 className="footerListHeader">Doormat Navigation</h3>
                 <nav>
                     <ul className="footerListContainer">
                         <li><a href="/home">Home</a></li>
@@ -18,7 +18,7 @@ function Footer() {
                 </nav>
             </section>
             <section className="footerColumn">
-                <h3>Contact</h3>
+                <h3 className='footerListHeader'>Contact</h3>
                 <ul className="footerListContainer">
                     <li>Address</li>
                     <li>Email</li>
@@ -26,7 +26,7 @@ function Footer() {
                 </ul>
             </section>
             <section className="footerColumn">
-                <h3>Social Media Links</h3>
+                <h3 className='footerListHeader'>Social Media Links</h3>
                 <ul className="footerListContainer">
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
