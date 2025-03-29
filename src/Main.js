@@ -1,6 +1,9 @@
 import heroImage from "./restauranfood.jpg"
 import restaurantImage from "./restaurant.jpg"
 import marioAndAdrian from "./Mario and Adrian b.jpg"
+import greekSalad from "./greek salad.jpg"
+import bruschetta from "./bruchetta.svg"
+import lemonDessert from "./lemon dessert.jpg"
 
 function Main() {
     return (
@@ -24,18 +27,64 @@ function Main() {
                     <button className="button specialsButton">Online Menu</button>
                 </section>
                 <section className="specialsCards">
-                    <section className="specialsCard">Greek Salad</section>
-                    <section className="specialsCard">Bruschetta</section>
-                    <section className="specialsCard">Lemon Dessert</section>
+                    <section className="specialsCard">
+                        <img src={greekSalad} className="specialsImage" alt="Greek salad"></img>
+                        <section className="specialsCardContent">
+                            <section className="specialsCardHeadingPrice">
+                                <h4 className="specialsCardHeader">Greek Salad</h4>
+                                <p className="specialsCardPrice">$12.99</p>
+                            </section>
+                            <p className="specialsCardDescription">
+                                The famous Greek salad of peppers, lettuce, olives, and our Chicago style feta cheese,
+                                garnished with crunchy garlic and rosemary croutons.
+                            </p>
+                            <button className="button specialsCardButton">Order a Delivery</button>
+                        </section>
+                    </section>
+                    <section className="specialsCard">
+                        <img src={bruschetta} className="specialsImage" alt="Bruschetta"></img>
+                        <section className="specialsCardContent">
+                            <section className="specialsCardHeadingPrice">
+                                <h4 className="specialsCardHeader">Bruschetta</h4>
+                                <p className="specialsCardPrice">$5.99</p>
+                            </section>
+                            <p className="specialsCardDescription">
+                                Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
+                            </p>
+                            <button className="button specialsCardButton">Order a Delivery</button>
+                        </section>
+                    </section>
+                    <section className="specialsCard">
+                        <img src={lemonDessert} className="specialsImage" alt="Lemon Dessert cake"></img>
+                        <section className="specialsCardContent">
+                            <section className="specialsCardHeadingPrice">
+                                <h4 className="specialsCardHeader">Lemon Dessert</h4>
+                                <p className="specialsCardPrice">$5.00</p>
+                            </section>
+                            <p className="specialsCardDescription">
+                                This comes straight from every grandma's recipe book, every last ingredient has been sourced
+                                 and is as authentic as can be imagined.
+                            </p>
+                            <button className="button specialsCardButton">Order a Delivery</button>
+                        </section>
+                    </section>
                 </section>
             </section>
             <section className="testimonialsContainer">
                 <h2 className="testimonialsHeader">Testimonials</h2>
                 <section className="testimonialsCards">
-                    <section className="testimonialsCard">Testimonal1</section>
-                    <section className="testimonialsCard">Testimonal2</section>
-                    <section className="testimonialsCard">Testimonal3</section>
-                    <section className="testimonialsCard">Testimonal4</section>
+                    <section className="testimonialsCard">
+                        "The food was great, 10/10, highly recommend." - Robert P.
+                    </section>
+                    <section className="testimonialsCard">
+                        "Best Greek salad I've ever had!" - Martha B.
+                    </section>
+                    <section className="testimonialsCard">
+                        "Best Mediterranean food in Chicago at a great price." - Tim Q.
+                    </section>
+                    <section className="testimonialsCard">
+                        "The food is always great whether in house or delivered." - Matt R.
+                    </section>
                 </section>
             </section>
             <section className="aboutContainer">

@@ -183,6 +183,56 @@
   justify-content: space-around;
   margin-top: 3%;
   padding-bottom: 3%;
+  flex-wrap: wrap;
+}
+
+.specialsCard {
+  width: 25%;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px black;
+  background-color: #EDEFEE;
+}
+
+.specialsCardPrice {
+  font-family: 'Markazi Text', sans-serif;
+  color: #EE9972;
+  font-size: 1.5vw;
+}
+
+.specialsCardHeader {
+  font-family: 'Markazi Text', sans-serif;
+  font-size: 1.5vw;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+.specialsCardHeadingPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.specialsImage {
+  width: 100%;
+  height: 275px;
+  border-radius: 16px;
+}
+
+.specialsCardDescription {
+  font-family: 'Karla', sans-serif;
+  font-size: 1vw;
+  color: #333333;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.specialsCardButton {
+  margin-left: 22%;
+  margin-bottom: 3%;
 }
 
 .testimonialsHeader {
@@ -199,9 +249,20 @@
 
 .testimonialsCards {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   margin-top: 3%;
   padding-bottom: 3%;
+}
+
+.testimonialsCard {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3vw;
+  background-color: #EDEFEE;
+  color: #333333;
+  width: 20%;
+  height: auto;
+  padding: 20px;
 }
 
 .aboutContainer {
