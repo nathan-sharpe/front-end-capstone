@@ -175,7 +175,7 @@
 }
 
 .specialsButton {
-  margin-top: 3%;
+  margin-top: 15%;
 }
 
 .specialsCards {
@@ -183,7 +183,7 @@
   justify-content: space-around;
   margin-top: 3%;
   padding-bottom: 3%;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
 }
 
 .specialsCard {

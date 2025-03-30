@@ -15,7 +15,7 @@ function Main() {
                     <p className="heroSectionDescription">
                         We are a family owned Mediterranean restaurant, focused on traditional recipes with a modern twist.
                     </p>
-                    <button className="button heroButton">Reserve a Table</button>
+                    <a href="/reservations"><button className="button heroButton">Reserve a Table</button></a>
                 </section>
                 <section className="heroSectionColumn">
                     <img src={heroImage} className="heroImage"></img>
@@ -24,7 +24,7 @@ function Main() {
             <section className="highlightsContainer">
                 <section className="specialsTopFlex">
                     <h3 className="specialsHeader">This week's specials!</h3>
-                    <button className="button specialsButton">Online Menu</button>
+                    <a href="/menu"><button className="button specialsButton">Online Menu</button></a>
                 </section>
                 <section className="specialsCards">
                     <section className="specialsCard">
@@ -38,7 +38,7 @@ function Main() {
                                 The famous Greek salad of peppers, lettuce, olives, and our Chicago style feta cheese,
                                 garnished with crunchy garlic and rosemary croutons.
                             </p>
-                            <button className="button specialsCardButton">Order a Delivery</button>
+                            <a href="/orderonline"><button className="button specialsCardButton">Order a Delivery</button></a>
                         </section>
                     </section>
                     <section className="specialsCard">
@@ -51,7 +51,7 @@ function Main() {
                             <p className="specialsCardDescription">
                                 Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
                             </p>
-                            <button className="button specialsCardButton">Order a Delivery</button>
+                            <a href="/orderonline"><button className="button specialsCardButton">Order a Delivery</button></a>
                         </section>
                     </section>
                     <section className="specialsCard">
@@ -65,7 +65,7 @@ function Main() {
                                 This comes straight from every grandma's recipe book, every last ingredient has been sourced
                                  and is as authentic as can be imagined.
                             </p>
-                            <button className="button specialsCardButton">Order a Delivery</button>
+                            <a href="/orderonline"><button className="button specialsCardButton">Order a Delivery</button></a>
                         </section>
                     </section>
                 </section>
