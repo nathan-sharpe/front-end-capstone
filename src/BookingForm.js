@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function BookingForm() {
     const handleSubmit = (e) => {
@@ -13,6 +14,11 @@ function BookingForm() {
     const [time, setTime] = useState("")
     const [guests, setGuests] = useState(1)
     const [occasion, setOccasion] = useState("")
+
+    const navigate = useNavigate();
+    function handleClick() {
+        navigate("/confirmation");
+    }
 
     return (
         <>
@@ -58,7 +64,7 @@ function BookingForm() {
                             <option>Anniversary</option>
                         </select>
                     </div>
-                    <button className="button submitButton" type="submit">Submit Reservation</button>
+                    <button className="button submitButton" type="submit" onClick={handleClick}>Submit Reservation</button>
                 </fieldset>
             </form>
         </>
