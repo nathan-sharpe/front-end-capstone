@@ -14,6 +14,7 @@ function BookingForm() {
     const [time, setTime] = useState("")
     const [guests, setGuests] = useState(1)
     const [occasion, setOccasion] = useState("")
+    const [availableTimes, setAvailableTimes] = useState([])
 
     const navigate = useNavigate();
     function handleClick() {
@@ -64,7 +65,7 @@ function BookingForm() {
                             <option>Anniversary</option>
                         </select>
                     </div>
-                    <button className="button submitButton" type="submit" onClick={handleClick}>Submit Reservation</button>
+                    <button className="button submitFormButton" type="submit" onClick={handleClick}>Submit Reservation</button>
                 </fieldset>
             </form>
         </>

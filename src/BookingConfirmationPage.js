@@ -5,8 +5,8 @@ function BookingConfirmationPage() {
     return (
         <>
             <Header />
-            <h1>Booking Confirmed!</h1>
-            <a href="/home"><button className="button">Return to Homepage</button></a>
+            <h1 className="bookingConfirmationHeader">Booking Confirmed!</h1>
+            <a href="/home"><button className="button returnButton">Return to Homepage</button></a>
             <Footer />
         </>
     )

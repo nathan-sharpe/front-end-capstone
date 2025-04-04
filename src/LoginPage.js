@@ -5,7 +5,7 @@ function LoginPage() {
     return (
         <>
             <Header />
-            <h1>Login Page</h1>
+            <p>Login Page Content</p>
             <Footer />
         </>
     )

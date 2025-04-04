@@ -5,7 +5,7 @@ function MenuPage() {
     return (
         <>
             <Header />
-            <h1>Menu Page</h1>
+            <p>Menu Page Content</p>
             <Footer />
         </>
     )
