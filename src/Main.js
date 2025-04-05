@@ -77,9 +77,6 @@ function Main() {
                         "The food was great, 10/10, highly recommend." - Robert P.
                     </section>
                     <section className="testimonialsCard">
-                        "Best Greek salad I've ever had!" - Martha B.
-                    </section>
-                    <section className="testimonialsCard">
                         "Best Mediterranean food in Chicago at a great price." - Tim Q.
                     </section>
                     <section className="testimonialsCard">

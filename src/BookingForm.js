@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 function BookingForm() {
     const handleSubmit = (e) => {
-        e.preventDefault();
         setDate("");
         setTime("");
         setGuests(1);
@@ -16,14 +14,9 @@ function BookingForm() {
     const [occasion, setOccasion] = useState("")
     const [availableTimes, setAvailableTimes] = useState([])
 
-    const navigate = useNavigate();
-    function handleClick() {
-        navigate("/confirmation");
-    }
-
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form action="/confirmation" onSubmit={handleSubmit}>
                 <fieldset>
                     <div className="formField">
                         <label htmlFor="res-date">Select Date:</label>
@@ -33,11 +26,12 @@ function BookingForm() {
                             name="res-name"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
+                            required
                         />
                     </div>
                     <div className="formField">
                         <label htmlFor="res-time">Select Time:</label>
-                        <select id="res-time"  name="res-time" value={time} onChange={(e) => {setTime(e.target.value)}}>
+                        <select id="res-time"  name="res-time" value={time} onChange={(e) => {setTime(e.target.value)}} required>
                             <option>17:00</option>
                             <option>18:00</option>
                             <option>19:00</option>
@@ -56,6 +50,7 @@ function BookingForm() {
                             max="10"
                             value={guests}
                             onChange={(e) => {setGuests(e.target.value)}}
+                            required
                         />
                     </div>
                     <div className="formField">
@@ -65,7 +60,7 @@ function BookingForm() {
                             <option>Anniversary</option>
                         </select>
                     </div>
-                    <button className="button submitFormButton" type="submit" onClick={handleClick}>Submit Reservation</button>
+                    <button className="button submitFormButton" type="submit">Submit Reservation</button>
                 </fieldset>
             </form>
         </>
