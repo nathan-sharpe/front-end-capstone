@@ -12,7 +12,6 @@ function BookingForm() {
     const [time, setTime] = useState("")
     const [guests, setGuests] = useState(1)
     const [occasion, setOccasion] = useState("")
-    const [availableTimes, setAvailableTimes] = useState([])
 
     return (
         <>

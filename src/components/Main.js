@@ -1,9 +1,9 @@
-import heroImage from "./restauranfood.jpg"
-import restaurantImage from "./restaurant.jpg"
-import marioAndAdrian from "./Mario and Adrian b.jpg"
-import greekSalad from "./greek salad.jpg"
-import bruschetta from "./bruchetta.svg"
-import lemonDessert from "./lemon dessert.jpg"
+import heroImage from "../images/restauranfood.jpg"
+import restaurantImage from "../images/restaurant.jpg"
+import marioAndAdrian from "../images/Mario and Adrian b.jpg"
+import greekSalad from "../images/greek salad.jpg"
+import bruschetta from "../images/bruchetta.svg"
+import lemonDessert from "../images/lemon dessert.jpg"
 
 function Main() {
     return (
@@ -18,7 +18,7 @@ function Main() {
                     <a href="/reservations"><button className="button heroButton">Reserve a Table</button></a>
                 </section>
                 <section className="heroSectionColumn">
-                    <img src={heroImage} className="heroImage"></img>
+                    <img src={heroImage} className="heroImage" alt="Holding a tray of food"></img>
                 </section>
             </section>
             <section className="highlightsContainer">
@@ -93,8 +93,8 @@ function Main() {
                     </p>
                 </section>
                 <section className="aboutColumn imageColumn">
-                    <img src={restaurantImage} className="aboutImage"></img>
-                    <img src={marioAndAdrian} className="aboutImage"></img>
+                    <img src={restaurantImage} className="aboutImage" alt="Little Lemon restaurant interior"></img>
+                    <img src={marioAndAdrian} className="aboutImage" alt="Brothers Mario and Adrian in the kitchen"></img>
                 </section>
             </section>
         </main>

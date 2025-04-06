@@ -1,6 +1,6 @@
-import Header from "./Header";
-import BookingForm from "./BookingForm";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import BookingForm from "../components/BookingForm";
+import Footer from "../components/Footer";
 
 function ReservationsPage() {
     return (

@@ -1,15 +1,12 @@
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
 import './App.css';
-import Homepage from './Homepage';
+import Homepage from './pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AboutPage from './AboutPage';
-import MenuPage from './MenuPage';
-import ReservationsPage from './ReservationsPage';
-import OrderOnlinePage from './OrderOnlinePage';
-import LoginPage from './LoginPage';
-import BookingConfirmationPage from './BookingConfirmationPage';
+import AboutPage from './pages/AboutPage';
+import MenuPage from './pages/MenuPage';
+import ReservationsPage from './pages/ReservationsPage';
+import OrderOnlinePage from './pages/OrderOnlinePage';
+import LoginPage from './pages/LoginPage';
+import BookingConfirmationPage from './pages/BookingConfirmationPage';
 
 function App() {
   return (

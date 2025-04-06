@@ -1,5 +1,5 @@
-import logo from './little-lemon-logo.svg'
-import Nav from './Nav'
+import logo from '../images/little-lemon-logo.svg'
+import Nav from '../components/Nav'
 import { useNavigate } from 'react-router-dom'
 
 function Header () {

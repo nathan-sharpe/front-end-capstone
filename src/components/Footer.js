@@ -1,4 +1,4 @@
-import logo from './little-lemon-logo.svg'
+import logo from '../images/little-lemon-logo.svg'
 
 function Footer() {
     return (
