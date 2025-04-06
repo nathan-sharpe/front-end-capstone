@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import DeliverySection from "../components/DeliverySection";
 
 function OrderOnlinePage() {
     return (
         <>
             <Header />
-            <p>Order Online Page Content</p>
+            <DeliverySection />
             <Footer />
         </>
     )

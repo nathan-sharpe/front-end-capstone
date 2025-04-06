@@ -6,12 +6,14 @@ function BookingForm() {
         setTime("");
         setGuests(1);
         setOccasion("");
+        setEmail("");
     }
 
     const [date, setDate] = useState("")
     const [time, setTime] = useState("")
     const [guests, setGuests] = useState(1)
     const [occasion, setOccasion] = useState("")
+    const [email, setEmail] = useState("")
 
     return (
         <>
@@ -22,7 +24,7 @@ function BookingForm() {
                         <input
                             id="res-date"
                             type="date"
-                            name="res-name"
+                            name="res-date"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                             required
@@ -58,6 +60,17 @@ function BookingForm() {
                             <option>Birthday</option>
                             <option>Anniversary</option>
                         </select>
+                    </div>
+                    <div className="formField">
+                        <label htmlFor="emailInput">Email Address:</label>
+                        <input
+                            id="emailInput"
+                            name="emailInput"
+                            type="email"
+                            value={email}
+                            onChange={(e) => {setEmail(e.target.value)}}
+                            required
+                        />
                     </div>
                     <button className="button submitFormButton" type="submit">Submit Reservation</button>
                 </fieldset>
