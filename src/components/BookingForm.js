@@ -7,6 +7,7 @@ function BookingForm() {
         setGuests(1);
         setOccasion("");
         setEmail("");
+        setPassword("");
     }
 
     const [date, setDate] = useState("")
@@ -14,11 +15,13 @@ function BookingForm() {
     const [guests, setGuests] = useState(1)
     const [occasion, setOccasion] = useState("")
     const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     return (
         <>
-            <form action="/confirmation" onSubmit={handleSubmit}>
+            <form action="/bookingConfirmation" onSubmit={handleSubmit}>
                 <fieldset>
+                    <h2 className="formHeader">Book a Reservation:</h2>
                     <div className="formField">
                         <label htmlFor="res-date">Select Date:</label>
                         <input
@@ -62,13 +65,26 @@ function BookingForm() {
                         </select>
                     </div>
                     <div className="formField">
-                        <label htmlFor="emailInput">Email Address:</label>
+                        <label htmlFor="emailInput">Account Email Address:</label>
                         <input
                             id="emailInput"
                             name="emailInput"
                             type="email"
                             value={email}
                             onChange={(e) => {setEmail(e.target.value)}}
+                            required
+                        />
+                    </div>
+                    <div className="formField">
+                        <label htmlFor="passwordInput">Account Password:</label>
+                        <input
+                            id="passwordInput"
+                            name="passwordInput"
+                            type="password"
+                            minLength={6}
+                            maxLength={30}
+                            value={password}
+                            onChange={(e) => {setPassword(e.target.value)}}
                             required
                         />
                     </div>

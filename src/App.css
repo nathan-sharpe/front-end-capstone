@@ -164,17 +164,16 @@
   font-size: 1.3vw;
 }
 
-.specialsTopFlex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: row wrap;
+.specialsHeaderContainer {
+  display: block;
+  text-align: center;
 }
 
 .specialsHeader {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   font-size: 2vw;
   font-weight: bold;
-  margin-top: 3%;
+  padding-top: 3%;
 }
 
 .specialsButton {
@@ -235,8 +234,8 @@
 }
 
 .specialsCardButton {
+  margin-top: 3%;
   margin-left: 22%;
-  margin-bottom: 3%;
 }
 
 .testimonialsHeader {
@@ -352,7 +351,7 @@ a:hover {
   margin-right: auto;
 }
 
-.bookingConfirmationHeader {
+.confirmationHeader {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   padding: 1%;
   color:#333333;
@@ -369,6 +368,41 @@ a:hover {
   margin-right: auto;
   text-decoration: none;
   margin-bottom: 1%;
+}
+
+.formHeader {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 3vw;
+  color:#333333;
+  padding: 1%;
+}
+
+.formDescription {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2vw;
+  color:#333333;
+  padding: 1%;
+}
+
+.formField label {
+  padding-right: 2%;
+  font-size: 2vw;
+}
+
+.formField p {
+  font-size: 2vw;
+  margin-bottom: 1%;
+}
+
+.formField input {
+  width: auto;
+  height: auto;
+}
+
+.itemsList input {
+  width: auto;
+  height: auto;
+  margin-right: 2%;
 }
 
 @media (max-width: 633px) {

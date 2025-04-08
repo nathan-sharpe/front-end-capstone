@@ -6,7 +6,7 @@ import MenuPage from './pages/MenuPage';
 import ReservationsPage from './pages/ReservationsPage';
 import OrderOnlinePage from './pages/OrderOnlinePage';
 import LoginPage from './pages/LoginPage';
-import BookingConfirmationPage from './pages/BookingConfirmationPage';
+import ConfirmationPage from './pages/ConfirmationPage';
 
 function App() {
   return (
@@ -20,7 +20,9 @@ function App() {
           <Route path="/reservations" element={<ReservationsPage />} />
           <Route path="/orderonline" element={<OrderOnlinePage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/confirmation" element={<BookingConfirmationPage />} />
+          <Route path="/bookingConfirmation" element={<ConfirmationPage confirmation= "Booking" />} />
+          <Route path="/orderConfirmation" element={<ConfirmationPage confirmation= "Order" />} />
+          <Route path="/accountConfirmation" element={<ConfirmationPage confirmation= "Account creation" />} />
         </Routes>
       </BrowserRouter>
     </>

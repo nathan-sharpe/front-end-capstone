@@ -5,9 +5,8 @@ import lemonDessert from "../images/lemon dessert.jpg"
 function HighlightsSection() {
     return (
         <section className="highlightsContainer">
-                <section className="specialsTopFlex">
+                <section className="specialsHeaderContainer">
                     <h3 className="specialsHeader">This week's specials!</h3>
-                    <a href="/menu"><button className="button specialsButton">Online Menu</button></a>
                 </section>
                 <section className="specialsCards">
                     <section className="specialsCard">
